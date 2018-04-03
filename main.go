@@ -92,7 +92,7 @@ func (s *SimpleServer) ListenAndServe(addr string) error {
 		return err
 	}
 
-	log.Printf("Serving folder %s at %s", dir, ln.Addr())
+	log.Printf("Serving folder %s at %s", s.Dir, ln.Addr())
 
 	bytes, err := tabbedInterfaces()
 	if err != nil {
